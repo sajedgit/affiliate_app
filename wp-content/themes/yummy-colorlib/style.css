@@ -1534,7 +1534,7 @@ ul.dropdown a, ul.dropdown a:link, ul.dropdown a:visited, ul.dropdown li {
 }
 
 #pattern-switcher {
-    width: 15%;
+    width: 160px;
     background-color: #fc6c3f;
     position: fixed;
     top: 0px;
@@ -1571,6 +1571,7 @@ ul.dropdown a, ul.dropdown a:link, ul.dropdown a:visited, ul.dropdown li {
     font-size: 11px;
     text-align: left;
     font-weight: normal;
+	text-transform: none;
 }
 .block_heading
 {
@@ -1595,5 +1596,16 @@ margin-left: 5%;
 {
 	font-size:15px;
 }
+
+.catagory-title a > h5 {
+ font-size: 1rem;
+}
+ul.dropdown > li > a {
+    text-transform: capitalize!important;
+    padding: 3px 18px!important;
+    line-height: 0px!important;
+    font-size: 11px!important;
+}
+
 /* ----- End of Custom css ----- */
 

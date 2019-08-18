@@ -8,7 +8,7 @@
 							<a href="<?php echo site_url(); ?>" class="yummy-logo">Merry Christmas</a>
                         </div>
                         <!-- Menu Area Start -->
-                          <?php shailan_dropdown_menu( ); ?>
+                          <?php //shailan_dropdown_menu( ); ?>
                     </div>
                 </div>
             </div>

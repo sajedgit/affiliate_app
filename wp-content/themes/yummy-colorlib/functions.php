@@ -122,6 +122,7 @@ function yummy_colorlib_scripts() {
 	
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css',false,null,'all');
 	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/responsive/responsive.css',false,null,'all'); 
+	wp_enqueue_style( 'media_css', get_template_directory_uri() . '/css/responsive/media.css',false,null,'all'); 
 	
 	wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery/jquery-2.2.4.min.js', false, null, false );
     wp_enqueue_script('jquery'); 
