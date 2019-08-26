@@ -43,7 +43,7 @@ function yummy_colorlib_setup() {
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'yummy_colorlib' ),
-		'social'  => __( 'Social Links Menu', 'yummy_colorlib' ),
+		'social'  => __( 'Footer Menu', 'yummy_colorlib' ),
 	) );
 
 	/*
@@ -74,6 +74,11 @@ function yummy_colorlib_setup() {
 		'audio',
 		'chat',
 	) );
+	
+		
+		// This theme uses wp_nav_menu() in one location.
+		
+	   
 
 	 
 }
