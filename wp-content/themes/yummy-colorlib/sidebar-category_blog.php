@@ -1,7 +1,7 @@
 <section class="blog_area section_padding_80">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-12">
+                <div class="col-12 col-lg-8">
                     <div class="row">
 
                        
@@ -82,7 +82,7 @@
 
                 <!-- ****** Blog Sidebar ****** -->
 				
-				<?php //get_sidebar(); ?>
+				<?php get_sidebar(); ?>
 				
                 <!-- ****** Blog Sidebar ****** -->
                 

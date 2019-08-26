@@ -26,7 +26,7 @@
         <div class="yummy-load"></div>
     </div>
 
-	<?php get_sidebar('fixed'); ?>
+	<?php //get_sidebar('fixed'); ?>
 
     <!-- ****** Top Header Area Start ****** -->
     <?php /* <div class="top_header_area">

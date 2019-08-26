@@ -704,7 +704,7 @@ li {
 }
 
 .single-post p {
-    color: #51545f;
+    color: #000;
 }
 
 .single-post .read-more {
@@ -908,12 +908,13 @@ li {
 }
 
 .widget-title > h6 {
-    background: #fee2d9;
-    height: 40px;
-    width: 100%;
-    line-height: 40px;
-    border-radius: 2px;
-    margin-bottom: 30px;
+  background: #fc6c3f;
+height: 40px;
+width: 100%;
+line-height: 40px;
+border-radius: 2px;
+margin-bottom: 30px;
+color: #fff;
 }
 
 .about-me-widget-thumb img {
@@ -1567,11 +1568,13 @@ ul.dropdown a, ul.dropdown a:link, ul.dropdown a:visited, ul.dropdown li {
 
 .fixed_sidebar_content p
 {
-	line-height: 12px;
-    font-size: 11px;
-    text-align: left;
-    font-weight: normal;
+	line-height: 24px;
+	font-size: 16px;
+	text-align: left;
+	font-weight: normal;
 	text-transform: none;
+	margin: auto;
+	color: #000;
 }
 .block_heading
 {

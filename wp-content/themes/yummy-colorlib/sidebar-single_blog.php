@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row justify-content-center">
 			  
-                <div class="col-12 col-lg-12">
+                <div class="col-12 col-lg-8">
                     <div class="row no-gutters">
 					
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -158,11 +158,13 @@
 
                 <!-- ****** Blog Sidebar ****** -->
 				
-				<?php //get_sidebar(); ?>
+				<?php get_sidebar(); ?>
 				
                 <!-- ****** Blog Sidebar ****** -->
                 
             </div>
         </div>
+		
+		
     </section>
     <!-- ****** Single Blog Area End ****** -->

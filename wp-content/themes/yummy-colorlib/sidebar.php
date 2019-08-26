@@ -1,7 +1,12 @@
+<!-- sticky side bar doc
+ 
+   https://stackoverflow.com/questions/40497288/how-to-create-a-fixed-sidebar-layout-with-bootstrap-4/49436717 
 
-                <!-- ****** Blog Sidebar ****** -->
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
-                    <div class="blog-sidebar mt-5 mt-lg-0">
+ -->
+				
+				<!-- ****** Blog Sidebar ****** -->
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4"  id="sticky-sidebar" >
+                    <div class="blog-sidebar mt-5 mt-lg-0 sticky-top">
                                           
 
                         <!-- Single Widget Area -->
@@ -20,17 +25,18 @@
 								$featured_img = get_the_post_thumbnail_url($post->ID, 'thumb')
 							?>
 		                           
-                            <!-- Single Popular Post -->
-                            <div class="single-populer-post d-flex">
-                                <img src="<?php echo $featured_img ?>" width=""  alt="">
-                                <div class="post-content">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <h6><?php the_title(); ?></h6>
-                                    </a>
-                                    
-                                    <p><?php echo get_the_date( 'M d, Y' ); ?></p>
-                                </div>
-                            </div>
+                           <!-- Single Popular Post -->
+							<div class="row fixed_sidebar">
+								
+								<div class="fixed_sidebar_content  h-100">
+									<img src="<?php echo $featured_img ?>" width="25%"  alt="">
+									<a href="<?php the_permalink(); ?>">
+										<p class=" my-auto"><?php the_title(); ?></p>
+									</a>
+									
+									<p><?php //echo get_the_date( 'M d, Y' ); ?></p>
+								</div>
+							</div>
 							<?php endforeach; wp_reset_postdata(); ?>
 							
                         </div>
@@ -42,4 +48,5 @@
 						</div>
 					  
                     </div>
+					
                 </div>
