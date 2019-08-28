@@ -27,7 +27,7 @@
                         <div class="col-12">
                             <div class="single-post wow fadeInUp" data-wow-delay=".2s">
                                 <!-- Post Thumb -->
-                                <div class="post-thumb   justify-content-center">
+                                <div class="post-thumb sticky_image  justify-content-center">
                                       <img src="<?php echo $featured_img_url ?>" height="" alt="Merry Christmas">
                                 </div>
                                 <!-- Post Content -->
