@@ -634,6 +634,7 @@ li {
 .post-thumb img {
     border-radius: 30px;
     margin-bottom: 30px;
+	width:100%;
 }
 
 .post-meta {
