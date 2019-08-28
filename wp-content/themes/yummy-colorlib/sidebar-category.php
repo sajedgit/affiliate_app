@@ -6,10 +6,11 @@
 		    <h3>Categories:</h3>
             <div class="row">
 			<?php 
-			$cat = get_query_var('cat'); 
+			echo $cat = get_query_var('cat'); 
 			$args = array(
 						'orderby' => 'id',
 						'child_of' => $cat,
+						'exclude' => 1,
 						//'hide_empty' => 0,
 						); 
 			$categories = get_categories($args);
