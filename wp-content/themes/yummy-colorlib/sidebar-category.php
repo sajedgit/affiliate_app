@@ -1,7 +1,7 @@
 
 
 
-<section class="categories_area clearfix" id="about">
+<section class="categories_area clearfix" id="category_section">
         <div class="container">
 		    <h3>Categories:</h3>
             <div class="row">
@@ -27,7 +27,7 @@
 			
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
-                        <img src="<?php echo $cat_img; ?>" alt="">
+                        <img class="image_cover" src="<?php echo $cat_img; ?>" alt="<?php echo $category->name ?>">
                         <div class="catagory-title">
                             <a href="<?php echo get_category_link( $category->term_id ) ?>">
                                 <h5><?php echo $category->name ?> </h5>
@@ -37,5 +37,8 @@
                 </div>
                 <?php endforeach;?>
             </div>
+				<hr class="style17"/>
         </div>
+		
     </section>
+	

@@ -15,6 +15,15 @@
     <!-- Favicon -->
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/images/core-img/favicon.ico">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQRBBKE95C"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-QQRBBKE95C');
+	</script>
 	
 	<?php wp_head(); ?>
 
@@ -22,9 +31,9 @@
 
 <body class="bg-pattern">
     <!-- Preloader Start -->
-    <div id="preloader">
+<?php /*     <div id="preloader">
         <div class="yummy-load"></div>
-    </div>
+    </div> */?>
 
 	<?php //get_sidebar('fixed'); ?>
 

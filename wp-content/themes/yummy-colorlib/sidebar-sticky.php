@@ -28,10 +28,10 @@
                             <div class="single-post wow fadeInUp" data-wow-delay=".2s">
                                 <!-- Post Thumb -->
                                 <div class="post-thumb   justify-content-center">
-                                      <img src="<?php echo $featured_img_url ?>" height="" alt="">
+                                      <img src="<?php echo $featured_img_url ?>" height="" alt="Merry Christmas">
                                 </div>
                                 <!-- Post Content -->
-                                <div class="post-content">
+                           <?php  /*   <div class="post-content">
                                     <div class="post-meta d-flex">
                                         <div class="post-author-date-area d-flex">
                                             <!-- Post Author -->
@@ -64,7 +64,7 @@
                                     </a>
                                     <p><?php the_excerpt(); ?></p>
                                     <a href="<?php the_permalink(); ?>" class="read-more">Continue Reading..</a>
-                                </div>
+                                </div> */  ?>
                             </div>
                         </div>
 						

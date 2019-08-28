@@ -19,7 +19,7 @@
                             <div class="single-post wow fadeInUp" data-wow-delay=".4s">
                                 <!-- Post Thumb -->
                                 <div class="post-thumb">
-                                    <img src="<?php echo $featured_img_url ?>" alt="">
+                                    <img class="image_cover" src="<?php echo $featured_img_url ?>" alt="<?php the_title(); ?>">
                                 </div>
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -58,6 +58,9 @@
                         </div>
 						<?php endforeach; ?>
 
+						<hr style="margin-bottom:35px;" class="style17 col-12 col-md-12"/>
+						
+						
                         <!-- ******* List Blog Area Start ******* -->
 						
 						<?php 
@@ -73,7 +76,7 @@
                             <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".2s">
                                 <!-- Post Thumb -->
                                 <div class="post-thumb">
-                                    <img src="<?php echo $featured_img_url ?>" alt="">
+                                    <img class="image_cover222" src="<?php echo $featured_img_url ?>" alt="<?php the_title(); ?>">
                                 </div>
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -108,15 +111,15 @@
                                     <a href="<?php the_permalink() ?>">
                                         <h4 class="post-headline"><?php the_title(); ?></h4>
                                     </a>
-                                    <p><?php the_excerpt(); ?></p>
-                                    <a href="<?php the_permalink() ?>" class="read-more">Continue Reading..</a>
+                                    <p><?php echo get_excerpt(500, 'content'); ?></p>
+                                   <?php /* <a href="<?php the_permalink() ?>" class="read-more">Continue Reading..</a> */?>
                                 </div>
                             </div>
                         </div>
 
                        <?php endforeach; ?>
 
-                        
+                      <hr class="style17 col-12 col-md-12"/>
 
                       
 
