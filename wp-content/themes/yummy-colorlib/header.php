@@ -9,8 +9,7 @@
 	<meta name="description" content="">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- Title -->
- 
+    
 
     <!-- Favicon -->
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/images/core-img/favicon.ico">
