@@ -10,7 +10,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title><?php wp_title(); ?></title>
+ 
 
     <!-- Favicon -->
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/images/core-img/favicon.ico">
