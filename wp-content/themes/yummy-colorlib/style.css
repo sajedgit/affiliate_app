@@ -1820,5 +1820,13 @@ hr.style18:before {
 /* ----- End of border css ----- */
 
 
+.post-content p{
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+
+
 /* ----- End of Custom css ----- */
 

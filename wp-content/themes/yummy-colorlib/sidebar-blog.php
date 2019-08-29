@@ -11,7 +11,7 @@
 							$welcome_posts = get_posts( $args );
 						    foreach($welcome_posts as $post):
 								setup_postdata( $post );
-							    $featured_img_url = get_the_post_thumbnail_url($post->ID, 'thumb')
+							    $featured_img_url = get_the_post_thumbnail_url($post->ID, 'medium')
 						?>
 
                         <!-- Single Post -->
@@ -68,7 +68,9 @@
 							$welcome_posts = get_posts( $args );
 						    foreach($welcome_posts as $post):
 								setup_postdata( $post );
-							    $featured_img_url = get_the_post_thumbnail_url($post->ID, 'thumb')
+							    $featured_img_url = get_the_post_thumbnail_url($post->ID, 'medium_large');
+						
+							
 						?>
 
                         <!-- Single Post -->

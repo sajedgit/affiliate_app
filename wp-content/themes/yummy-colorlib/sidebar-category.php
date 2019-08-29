@@ -19,16 +19,18 @@
 			<?php foreach($categories as $category): ?>
 			<?php
 			    $counter++;
-				if($counter>9)
+				if($counter>6)
 					break;
-				$term_vals = get_term_meta($category->term_id,"featured_image_id",true);
-				$post_data = get_post( $term_vals ); 
-				$cat_img = $post_data->guid;
+			
+				
+				$featured_image_id = get_term_meta( $category->term_id, 'featured_image_id', true );	
+				
 			?>
 			
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
-                        <img class="image_cover" src="<?php echo $cat_img; ?>" alt="<?php echo $category->name ?>">
+                       <?php /*  <img class="image_cover" src="<?php echo $cat_img; ?>" alt="<?php echo $category->name ?>"> */?>
+						<?php echo wp_get_attachment_image( $featured_image_id, array('320', '210'), "", array( "class" => "image_cover" ) );  ?>
                         <div class="catagory-title">
                             <a href="<?php echo get_category_link( $category->term_id ) ?>">
                                 <h5><?php echo $category->name ?> </h5>

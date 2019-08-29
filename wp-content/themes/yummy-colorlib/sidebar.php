@@ -22,7 +22,7 @@
 								$popular_posts = get_posts( $args );
 								foreach($popular_posts as $post):
 								setup_postdata( $post );
-								$featured_img = get_the_post_thumbnail_url($post->ID, 'thumb')
+								$featured_img = get_the_post_thumbnail_url($post->ID, 'medium')
 							?>
 		                           
                            <!-- Single Popular Post -->
