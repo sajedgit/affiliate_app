@@ -1826,7 +1826,42 @@ hr.style18:before {
 	letter-spacing: 1px;
 	word-spacing: 1px;
 }
+h1.post-headline
+{
+	font-size: 2rem;
+	margin: 10px 0;
+color: #232d37;
+-webkit-transition-duration: 500ms;
+transition-duration: 500ms;
+text-transform: capitalize;
+}
 
+h1.post-headline:hover, h1.post-headline-category:hover {
+    color: #fc6c3f;
+}
+h1.post-headline-category
+{
+	font-size: 1.5rem;
+	color: #232d37;
+-webkit-transition-duration: 500ms;
+transition-duration: 500ms;
+text-transform: capitalize;
+}
+.post-content a.read_more
+{
+	color: #fc6c3f;
+}
+.post-content a.read_more:hover
+{
+	color: #fc6c3f;
+	font-weight:bold;
+}
 
 /* ----- End of Custom css ----- */
+
+
+
+
+
+
 

@@ -48,7 +48,7 @@
                                         </div>
                                     </div>
                                     <a href="<?php the_permalink() ?>">
-                                        <h2 class="post-headline"><?php the_title(); ?></h2>
+                                        <h1 class="post-headline"><?php the_title(); ?></h1>
                                     </a>
 									<p>   <?php echo the_content(); ?> </p>
                                     

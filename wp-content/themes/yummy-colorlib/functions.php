@@ -151,7 +151,7 @@ function get_excerpt($limit, $source = null){
     $excerpt = substr($excerpt, 0, $limit);
     $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
     $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
-    $excerpt = $excerpt.'... <a href="'.get_permalink($post->ID).'">more</a>';
+    $excerpt = $excerpt.'... <a class="read_more" href="'.get_permalink($post->ID).'">more</a>';
     return $excerpt;
 }
 

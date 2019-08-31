@@ -54,10 +54,10 @@
                                         </div>
                                     </div>
                                     <a href="<?php the_permalink(); ?>">
-                                        <h4 class="post-headline"><?php the_title(); ?></h4>
+                                        <h1 class="post-headline-category"><?php the_title(); ?></h1>
                                     </a>
-                                    <p><?php echo get_excerpt(300, 'content'); //the_excerpt(); ?></p>
-                                    <a href="<?php the_permalink(); ?>" class="read-more">Continue Reading..</a>
+                                    <p><?php echo get_excerpt(200, 'content'); //the_excerpt(); ?></p>
+                                   <?php /* <a href="<?php the_permalink(); ?>" class="read-more">Continue Reading..</a> */ ?>
                                 </div>
                             </div>
                         </div>
