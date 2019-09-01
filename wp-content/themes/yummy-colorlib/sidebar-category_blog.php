@@ -1,4 +1,4 @@
-<section class="blog_area section_padding_80">
+<section class="blog_area section_padding_20_0">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
