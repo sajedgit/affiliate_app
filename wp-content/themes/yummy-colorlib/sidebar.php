@@ -29,7 +29,7 @@
 							<div class="row fixed_sidebar">
 								
 								<div class="fixed_sidebar_content  h-100">
-									<img src="<?php echo $featured_img ?>" width="25%"  alt="">
+									<img src="<?php echo $featured_img ?>" width="25%"  alt="<?php the_title(); ?>">
 									<a href="<?php the_permalink(); ?>">
 										<p class=" my-auto"><?php the_title(); ?></p>
 									</a>
