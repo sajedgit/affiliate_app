@@ -86,7 +86,7 @@
                 <!-- Logo Area Start -->
                 <div class="col-12">
                     <div class="logo_area text-center">
-                         <a href="<?php echo site_url(); ?>" class="yummy-logo">Merry Christmas</a>
+                         <a href="<?php echo site_url(); ?>" class="yummy-logo"><?php bloginfo('title'); ?></a>
                     </div>
 					 <div class="text-center">
                          <span class="yummy-slogan"><?php bloginfo('description'); ?></span>

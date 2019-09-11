@@ -4,7 +4,8 @@
  $cat_id = get_query_var('cat'); 
  
  if(isset($cat_id) && !empty($cat_id)): 
-	$header_title=get_cat_name($cat_id);
+	//$header_title=get_cat_name($cat_id);
+	$header_title="";
 	$featured_image_id = get_term_meta( $cat_id, 'featured_image_id', true );
 	$featured_img_url_arr = wp_get_attachment_image_src( $featured_image_id, 'full', false ); 
 	$featured_img_url=$featured_img_url_arr[0];
@@ -14,7 +15,8 @@
 	
 	
  else:
-	$header_title=get_the_title();
+	//$header_title=get_the_title();
+	$header_title="";
 	$featured_img_url = get_the_post_thumbnail_url($post->ID, 'full');
  endif;
  
