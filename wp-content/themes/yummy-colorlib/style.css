@@ -584,7 +584,7 @@ li {
 -------------------- */
 
 .categories_area {
-    padding: 20px;
+    padding: 0px;
 }
 
 .single_catagory {
@@ -1868,6 +1868,40 @@ text-transform: capitalize;
 }
 .category-headline-category:hover{
 	color:#000;
+}
+
+.intro_text blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 450px;
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    background:#ececec;
+}
+ 
+.intro_text blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    color: #7a7a7a;
+}
+ 
+.intro_text blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+  
+.intro_text blockquote cite:before {
+    content: "\2014 \2009";
 }
 
 /* ----- End of Custom css ----- */

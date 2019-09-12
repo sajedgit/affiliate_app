@@ -31,40 +31,10 @@
                                       <img src="<?php echo $featured_img_url ?>" height="" alt="Merry Christmas">
                                 </div>
                                 <!-- Post Content -->
-                           <?php  /*   <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#"><?php the_author(); ?></a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#"><?php echo get_the_date( 'M d, Y' ); ?></a>
-                                            </div>
-                                        </div>
-                                        <!-- Post Comment & Share Area -->
-                                        <div class="post-comment-share-area d-flex">
-                                            <!-- Post Favourite -->
-                                            <div class="post-favourite">
-                                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
-                                            </div>
-                                            <!-- Post Comments -->
-                                            <div class="post-comments">
-                                                <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i> <?php echo get_comments_number($post->ID); ?> </a>
-                                            </div>
-                                             <!-- Post Share -->
-                                            <div class="post-share">
-                                                <a onClick="return popitup('https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink() ?>')" href=""><i class="fa fa-share-alt" aria-hidden="true"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="<?php the_permalink(); ?>">
-                                        <h2 class="post-headline"><?php the_title() ?></h2>
-                                    </a>
-                                    <p><?php the_excerpt(); ?></p>
-                                    <a href="<?php the_permalink(); ?>" class="read-more">Continue Reading..</a>
-                                </div> */  ?>
+                              <div class="post-content intro_text row">
+                                   
+                                    <p><?php the_content(); ?></p>
+                                </div>  
                             </div>
                         </div>
 						
