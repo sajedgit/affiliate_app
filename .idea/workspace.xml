@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68f0b5c6-812c-42b3-a55d-4e4df7947390" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/sidebar-sticky.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/sidebar-sticky.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +50,7 @@
       <updated>1566857643712</updated>
       <workItem from="1568398395524" duration="1971000" />
       <workItem from="1568569141187" duration="482000" />
+      <workItem from="1568569690460" duration="1850000" />
     </task>
     <task id="LOCAL-00001" summary="Add robot.txt file">
       <created>1566858856295</created>
@@ -70,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568399882361</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add config files">
+      <created>1568569817070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568569817070</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -102,7 +112,8 @@
     <MESSAGE value="Add robot.txt file" />
     <MESSAGE value="set sticky image width 100%" />
     <MESSAGE value="add seperateror in intro text and category section" />
-    <option name="LAST_COMMIT_MESSAGE" value="add seperateror in intro text and category section" />
+    <MESSAGE value="add config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config files" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>D:\xampp\htdocs\affiliate_app</wordpressPath>

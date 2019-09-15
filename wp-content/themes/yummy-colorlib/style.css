@@ -1865,6 +1865,7 @@ text-transform: capitalize;
     transition-duration: 500ms;
     text-transform: capitalize;
     padding: 0px 0 10px;
+    width: 100%;
 }
 .category-headline-category:hover{
 	color:#000;

@@ -29,7 +29,7 @@
                     </div>
                     <!-- Post Content -->
                     <div class="post-content intro_text row">
-
+                        <h1 class="category-headline-category text-center"><?php the_title(); ?></h1>
                         <p><?php the_content(); ?></p>
                     </div>
                 </div>
