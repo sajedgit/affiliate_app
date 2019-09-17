@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f0b5c6-812c-42b3-a55d-4e4df7947390" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +24,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566857643712</updated>
-      <workItem from="1568726570120" duration="232000" />
+      <workItem from="1568726570120" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="Add robot.txt file">
       <created>1566858856295</created>
@@ -63,7 +64,28 @@
       <option name="project" value="LOCAL" />
       <updated>1566993137241</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change workspace.xml automatically">
+      <created>1568726842089</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568726842089</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add codeStyleConfig.xml file">
+      <created>1568726908897</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568726908897</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1568726974363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568726974363</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -81,7 +103,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add robot.txt file" />
     <MESSAGE value="set sticky image width 100%" />
-    <option name="LAST_COMMIT_MESSAGE" value="set sticky image width 100%" />
+    <MESSAGE value="change workspace.xml automatically" />
+    <MESSAGE value="add codeStyleConfig.xml file" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>F:\xampp\htdocs\affiliate_app</wordpressPath>
