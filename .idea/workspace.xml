@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f0b5c6-812c-42b3-a55d-4e4df7947390" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +47,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566857643712</updated>
-      <workItem from="1568726570120" duration="484000" />
+      <workItem from="1568726570120" duration="1394000" />
+      <workItem from="1569354898638" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="Add robot.txt file">
       <created>1566858856295</created>
@@ -85,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568726974363</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="some update">
+      <created>1568727314967</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568727314967</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -106,7 +113,8 @@
     <MESSAGE value="change workspace.xml automatically" />
     <MESSAGE value="add codeStyleConfig.xml file" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="some update" />
+    <option name="LAST_COMMIT_MESSAGE" value="some update" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>F:\xampp\htdocs\affiliate_app</wordpressPath>
