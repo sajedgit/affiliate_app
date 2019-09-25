@@ -16,9 +16,11 @@
 
             </div>
             <?php
-            query_posts('posts_per_page=5&meta_key=post_views_count&orderby=meta_value_num&order=DESC');
+            query_posts('posts_per_page=5&meta_key=post_views_count&orderby=post_views_count&order=DESC');
             if (have_posts()) : while (have_posts()) : the_post();
-                $featured_img = get_the_post_thumbnail_url($post->ID, 'medium')
+                $featured_img = get_the_post_thumbnail_url($post->ID, 'medium');
+				if($post->ID==48)
+					continue;
                 ?>
                 <!-- Single Popular Post -->
                 <div class="row fixed_sidebar">
