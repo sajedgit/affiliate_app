@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68f0b5c6-812c-42b3-a55d-4e4df7947390" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/yummy-colorlib/header.php" afterDir="false" />
+>>>>>>> 69cf323dbe1ed24fbd35b207b91d276ab84caea8
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +22,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1QxyVrRUDQAyD1dVqyNnYFiLPoM" />
+  <component name="ProjectId" id="1QnFJIUSE1sHOIgpammvzFGIfeg" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,8 +50,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566857643712</updated>
+<<<<<<< HEAD
       <workItem from="1568726570120" duration="1394000" />
       <workItem from="1569354898638" duration="43000" />
+=======
+      <workItem from="1568398395524" duration="1971000" />
+      <workItem from="1568569141187" duration="482000" />
+      <workItem from="1568569690460" duration="2529000" />
+      <workItem from="1568742605982" duration="1160000" />
+>>>>>>> 69cf323dbe1ed24fbd35b207b91d276ab84caea8
     </task>
     <task id="LOCAL-00001" summary="Add robot.txt file">
       <created>1566858856295</created>
@@ -64,33 +74,42 @@
       <option name="project" value="LOCAL" />
       <updated>1566993137241</updated>
     </task>
-    <task id="LOCAL-00003" summary="change workspace.xml automatically">
-      <created>1568726842089</created>
+    <task id="LOCAL-00003" summary="add seperateror in intro text and category section">
+      <created>1568399882361</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1568726842089</updated>
+      <updated>1568399882361</updated>
     </task>
-    <task id="LOCAL-00004" summary="add codeStyleConfig.xml file">
-      <created>1568726908897</created>
+    <task id="LOCAL-00004" summary="add config files">
+      <created>1568569817070</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1568726908897</updated>
+      <updated>1568569817070</updated>
     </task>
-    <task id="LOCAL-00005" summary="update">
-      <created>1568726974363</created>
+    <task id="LOCAL-00005" summary="add h1 tag with slogan in home page">
+      <created>1568573688894</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1568726974363</updated>
+      <updated>1568573688894</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00006" summary="some update">
       <created>1568727314967</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1568727314967</updated>
+=======
+    <task id="LOCAL-00006" summary="config">
+      <created>1568745892186</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568745892186</updated>
+>>>>>>> 69cf323dbe1ed24fbd35b207b91d276ab84caea8
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
@@ -107,16 +126,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add robot.txt file" />
     <MESSAGE value="set sticky image width 100%" />
+<<<<<<< HEAD
     <MESSAGE value="change workspace.xml automatically" />
     <MESSAGE value="add codeStyleConfig.xml file" />
     <MESSAGE value="update" />
     <MESSAGE value="some update" />
     <option name="LAST_COMMIT_MESSAGE" value="some update" />
+=======
+    <MESSAGE value="add seperateror in intro text and category section" />
+    <MESSAGE value="add config files" />
+    <MESSAGE value="add h1 tag with slogan in home page" />
+    <MESSAGE value="config" />
+    <option name="LAST_COMMIT_MESSAGE" value="config" />
+>>>>>>> 69cf323dbe1ed24fbd35b207b91d276ab84caea8
   </component>
   <component name="WordPressConfiguration" enabled="true">
-    <wordpressPath>F:\xampp\htdocs\affiliate_app</wordpressPath>
+    <wordpressPath>D:\xampp\htdocs\affiliate_app</wordpressPath>
   </component>
 </project>
