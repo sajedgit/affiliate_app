@@ -1906,6 +1906,12 @@ text-transform: capitalize;
     content: "\2014 \2009";
 }
 
+.aligncenter
+{
+	display: block;
+	margin: 0 auto;
+}
+
 /* ----- End of Custom css ----- */
 
 
