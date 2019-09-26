@@ -1612,7 +1612,7 @@ ul.dropdown > li > a {
     text-transform: capitalize!important;
     padding: 3px 18px!important;
     line-height: 0px!important;
-    font-size: 11px!important;
+    font-size: 14px!important;
 }
 
 .image_cover 
@@ -1904,6 +1904,12 @@ text-transform: capitalize;
   
 .intro_text blockquote cite:before {
     content: "\2014 \2009";
+}
+
+.aligncenter
+{
+	display: block;
+	margin: 0 auto;
 }
 
 /* ----- End of Custom css ----- */

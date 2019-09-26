@@ -60,16 +60,16 @@
                             </div>
 
                             <!-- Tags Area -->
-                            <div class="tags-area">
+                          <?php /*  <div class="tags-area">
                                 <a href="#">Multipurpose</a>
                                 <a href="#">Design</a>
                                 <a href="#">Ideas</a>
-                            </div>
+                            </div> */ ?>
 
                            <?php get_sidebar('related-post'); ?>
 
                             <!-- Comment Area Start -->
-                            <div class="comment_area section_padding_50 clearfix">
+                            <?php /* <div class="comment_area section_padding_50 clearfix">
                                 <h4 class="mb-30">2 Comments</h4>
 
                                 <ol>
@@ -149,7 +149,7 @@
                                         <button type="submit" class="btn contact-btn">Post Comment</button>
                                     </form>
                                 </div>
-                            </div>
+                            </div> */ ?>
 
                         </div>
                     </div>
