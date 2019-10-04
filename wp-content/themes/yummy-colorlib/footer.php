@@ -1,12 +1,21 @@
 <footer class="footer_area">
+        
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="footer-content">
+					
+					     <div class="text-center">
+							<p><a target="_blank"  href="https://togetinspire.com/"> togetinspire.com </a> is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a target="_blank" href="https://amzn.to/2nUjlZF">amazon.com</a></p>
+						 </div>
+					
                         <!-- Logo Area Start -->
                         <div class="footer-logo-area text-center"> 
 							<a href="<?php echo site_url(); ?>" class="yummy-logo">Merry Christmas</a>
                         </div>
+						<div class="text-center">
+							<span class="yummy-slogan">Together we celebrate this Christmas</span>
+						</div>
                         <!-- Menu Area Start -->
                           <?php //shailan_dropdown_menu( ); ?>
                     </div>
@@ -37,5 +46,7 @@
    }
    </script>
 
+<div id="amzn-assoc-ad-8e07ce14-46ef-4bd5-a144-cdbed2af1dc5"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=8e07ce14-46ef-4bd5-a144-cdbed2af1dc5"></script>  
+   
 </body>
 </html>
