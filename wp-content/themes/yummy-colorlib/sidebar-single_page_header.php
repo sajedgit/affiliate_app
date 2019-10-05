@@ -25,7 +25,7 @@
  <!-- ****** Breadcumb Area Start ****** -->
    <div class="container">
     <?php // $featured_img_url = get_the_post_thumbnail_url($post->ID, 'full'); ?>
-    <div class="breadcumb-area" title="<?php echo $header_title ?>" style="border-radius: 10px;background-image: url(<?php echo $featured_img_url ?>;">
+    <div class="breadcumb-area" title="<?php echo $header_title ?>" style="background-image: url(<?php echo $featured_img_url ?>;">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">

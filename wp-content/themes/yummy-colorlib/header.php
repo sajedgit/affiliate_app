@@ -12,6 +12,23 @@
 
     <!-- Favicon -->
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/images/core-img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="57x57"   href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60"   href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72"   href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76"   href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_url'); ?>/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url'); ?>/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_url'); ?>/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_url'); ?>/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php bloginfo('template_url'); ?>/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="<?php bloginfo('template_url'); ?>/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 
 	
@@ -28,47 +45,43 @@
 	<?php //get_sidebar('fixed'); ?>
 
     <!-- ****** Top Header Area Start ****** -->
-    <?php /* <div class="top_header_area">
+      <div class="top_header_area">
         <div class="container">
             <div class="row">
-                <div class="col-5 col-sm-6">
-                    <!--  Top Social bar start -->
-                    <div class="top_social_bar">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                    </div>
-                </div>
+                 
                 <!--  Login Register Area -->
-                <div class="col-7 col-sm-6">
+                <div class="col-12 col-sm-12">
                     <div class="signup-search-area d-flex align-items-center justify-content-end">
                         <div class="login_register_area d-flex">
                             <div class="login">
-                                <a href="register.html">Sing in</a>
+                                <a href="register.html">Privacy Policy</a>
                             </div>
                             <div class="register">
-                                <a href="register.html">Sing up</a>
+                                <a href="register.html">Contact Us</a>
                             </div>
                         </div>
                         <!-- Search Button Area -->
-                        <div class="search_button">
-                            <a class="searchBtn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- Search Form -->
-                        <div class="search-hidden-form">
-                            <form action="#" method="get">
-                                <input type="search" name="search" id="search-anything" placeholder="Search Anything...">
-                                <input type="submit" value="" class="d-none">
-                                <span class="searchBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
-                            </form>
-                        </div>
+							
+					<form role="search" method="get" class="search-form" action="<?php echo site_url(); ?>" style="width: 55%;margin-left: 3%;">
+		
+						<div class=" bg-light rounded rounded-pill shadow-sm ">
+							<div class="input-group">
+							  <input name="s" type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+							  <div class="input-group-append">
+								<button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+							  </div>
+							</div>
+						  </div>
+					</form>
+				
+								
+						
+                       
                     </div>
                 </div>
             </div>
         </div>
-    </div> */ ?>
+    </div>  
     <!-- ****** Top Header Area End ****** -->
 
     <!-- ****** Header Area Start ****** -->
