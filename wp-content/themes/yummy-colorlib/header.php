@@ -62,7 +62,7 @@
                         </div>
                         <!-- Search Button Area -->
 							
-					<form role="search" method="get" class="search-form" action="<?php echo site_url(); ?>" style="width: 55%;margin-left: 3%;">
+					<form role="search" method="get" class="search-form" action="<?php echo site_url(); ?>" style="margin-left: 3%;">
 		
 						<div class=" bg-light rounded rounded-pill shadow-sm ">
 							<div class="input-group">
