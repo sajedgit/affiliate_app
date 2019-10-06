@@ -8,7 +8,27 @@
 <div class="col-12 col-sm-8 col-md-6 col-lg-4" id="sticky-sidebar">
     <div class="blog-sidebar mt-5 mt-lg-0 sticky-top">
 
+	     
+	<?php /* 	 <div class="single-widget-area popular-post-widget">
+            <div class="widget-title text-center">
+                <h6>Search Content</h6>
+				
+				<form role="search" method="get" class="search-form" action="<?php echo site_url(); ?>" style="">
+		
+						<div class=" bg-light rounded rounded-pill shadow-sm ">
+							<div class="input-group">
+							  <input name="s" type="search" placeholder="Search" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+							  <div class="input-group-append">
+								<button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+							  </div>
+							</div>
+						  </div>
+					</form>
 
+            </div>
+		 </div> */ ?>
+		 
+		 
         <!-- Single Widget Area -->
         <div class="single-widget-area popular-post-widget">
             <div class="widget-title text-center">
@@ -56,6 +76,12 @@
            
 
         </div>
+		
+		 	
+		
+		
+				
+					
 
         <div class="single-widget-area dynamic-sidebar-widget">
             <?php if (is_active_sidebar('sidebar-1')) : ?>

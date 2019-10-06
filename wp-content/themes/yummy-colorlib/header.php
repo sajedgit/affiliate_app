@@ -54,19 +54,19 @@
                     <div class="signup-search-area d-flex align-items-center justify-content-end">
                         <div class="login_register_area d-flex">
                             <div class="login">
-                                <a href="register.html">Privacy Policy</a>
+                                <a href="<?php echo site_url(); ?>/privacy-policy/">Privacy Policy</a>
                             </div>
                             <div class="register">
-                                <a href="register.html">Contact Us</a>
+                                <a href="<?php echo site_url(); ?>/contact-us/">Contact Us</a>
                             </div>
                         </div>
                         <!-- Search Button Area -->
 							
-					<form role="search" method="get" class="search-form" action="<?php echo site_url(); ?>" style="margin-left: 3%;">
+					<form role="search" method="get" class="search-form-top" action="<?php echo site_url(); ?>" style="">
 		
 						<div class=" bg-light rounded rounded-pill shadow-sm ">
 							<div class="input-group">
-							  <input name="s" type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+							  <input name="s" type="search" placeholder="Search" aria-describedby="button-addon1" class="form-control border-0 bg-light">
 							  <div class="input-group-append">
 								<button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
 							  </div>

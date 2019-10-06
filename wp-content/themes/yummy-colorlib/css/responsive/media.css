@@ -2,17 +2,58 @@
 
 @media (min-width: 0px) and (max-width: 767px) 
 {
- #pattern-switcher 
- {
-    display: none;
- }
- .shailan-dropdown-menu-widget
- {
-    display: none ;
- }
- 
+	 #pattern-switcher 
+	 {
+		display: none;
+	 }
+	 .shailan-dropdown-menu-widget
+	 {
+		display: none ;
+	 }
+	 
+	 button#responsive-menu-button {
+
+		top: 42px!important;
+		right: 0%!important;
+	  
+	}
+
+	.yummy-slogan
+	{
+		font-size: 3vw;
+	}
+	.logo_area .yummy-logo 
+	{
+    font-size: 7vw;
+	}
+	.search-form-top
+	{
+		width:45%;
+	}
+	.login_register_area >.login > a,.login_register_area > .register > a
+	{
+		font-size: 11px;
+	}
  
 }
+
+@media (min-width: 0px) and (max-width: 380px)
+{
+	.login_register_area >.login ,.login_register_area > .register 
+	{
+		display:none;
+	}
+	.search-form-top
+	{
+		width:63%;
+		margin:0 auto;
+	}
+	.yummy-slogan
+	{
+		font-size: 4vw;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 800px) 
 {
   .container {

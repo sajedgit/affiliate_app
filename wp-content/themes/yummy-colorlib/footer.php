@@ -17,7 +17,8 @@
 							<span class="yummy-slogan">Together we celebrate this Christmas</span>
 						</div>
                         <!-- Menu Area Start -->
-                          <?php //shailan_dropdown_menu( ); ?>
+                          <?php shailan_dropdown_menu( ); ?>
+						  <?php //wp_nav_menu( array( 'container_class' => 'aaa', 'theme_location' => 'primary' ) ); ?>
                     </div>
                 </div>
             </div>

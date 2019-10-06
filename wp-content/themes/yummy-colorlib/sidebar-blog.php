@@ -97,7 +97,7 @@
                                         <div class="post-comment-share-area d-flex">
                                             <!-- Post Favourite -->
                                             <div class="post-favourite">
-                                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> 10</a>
+                                                <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> <?php  echo getPostViews(get_the_ID()); ?></a>
                                             </div>
                                             <!-- Post Comments -->
                                             <div class="post-comments">
