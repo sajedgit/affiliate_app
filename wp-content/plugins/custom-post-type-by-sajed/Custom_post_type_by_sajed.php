@@ -175,25 +175,58 @@ function get_product_func( $atts )
         'posts_per_page' => $count, 
         'orderby' => 'title', 
         'order' => 'ASC',
-        'cat' => 'home',
+       // 'cat' => $category,
+        'taxonomy_name' => $category,
     );
 	
 	$loop = new WP_Query( $args ); 
-        
+    $str="";    
+    $str.="<div class='col-12' style='border: 8px solid #fc6c3f; padding: 10px; position: relative;' >";    
+    $str.="<span style='background: #fc6c3f;color: #fff;padding: 6px;position: relative;top: -11px;left: -11px;'>Our pick</span>";    
     while ( $loop->have_posts() ) : $loop->the_post(); 
        // $featured_img = wp_get_attachment_image_src( $post->ID );
-        print the_title(); 
+	    $image_src = get_post_meta( get_the_ID(), 'image_src', true );
+	    $product_link = get_post_meta( get_the_ID(), 'product_link', true );
+        $str.= "<div class='col-sm-12' style='display:flex;'>";
+        $str.="<div class='col-sm-5'>".$image_src ."</div>"; 
+        $str.="<div class='col-sm-7'><h3>".get_the_title()."</h3><br/>"; 
+        $str.=get_the_content()."</div>"; 
+         
+		 $str.= "</div>";
+		 $str.= "<hr/>";
        
-        the_content(); 
+        //the_content(); 
     endwhile;
+	$str.= "</div>";
 
     wp_reset_postdata();
 	
 	//return "{$atts['cat']}--"."--{$atts['count']}";
+	return $str;
 }
 add_shortcode( 'get_product', 'get_product_func' );  
 // how to call in post/page ------->  [get_product cat="test" count=4]
 
+/*
+element {
 
+    border: 2px solid #fc6c3f;
+    padding: 37px;
+    position: relative;
+
+}
+element {
+
+    background: #fc6c3f;
+    color: #fff;
+    width: 89px;
+    padding: 6px;
+    position: absolute;
+    top: 0px;
+    left: 320px;
+
+}
+
+*/
 
 ?>

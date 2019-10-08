@@ -51,7 +51,8 @@
       <workItem from="1568569690460" duration="2529000" />
       <workItem from="1568742605982" duration="1855000" />
       <workItem from="1569696422965" duration="1404000" />
-      <workItem from="1570212912439" duration="2234000" />
+      <workItem from="1570212912439" duration="2266000" />
+      <workItem from="1570382594544" duration="715000" />
     </task>
     <task id="LOCAL-00001" summary="Add robot.txt file">
       <created>1566858856295</created>
@@ -130,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570213514792</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="config">
+      <created>1570216955879</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1570216955879</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -166,9 +174,9 @@
     <MESSAGE value="add h1 tag with slogan in home page" />
     <MESSAGE value="change google analytic configuration" />
     <MESSAGE value="Merge branch 'master' of https://github.com/sajedgit/affiliate_app&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <MESSAGE value="config" />
     <MESSAGE value="add gitignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore file" />
+    <MESSAGE value="config" />
+    <option name="LAST_COMMIT_MESSAGE" value="config" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>D:\xampp\htdocs\affiliate_app</wordpressPath>
