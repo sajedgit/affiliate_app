@@ -11,7 +11,7 @@
                         
 
                         <!-- Single Post -->
-                        <div class="col-10 col-sm-12">
+                        <div class="col col-sm-12">
                             <div class="single-post">
                                 <!-- Post Thumb -->
                                <?php /* <div class="post-thumb">
