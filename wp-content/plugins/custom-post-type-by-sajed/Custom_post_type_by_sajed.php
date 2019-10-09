@@ -180,22 +180,23 @@ function get_product_func( $atts )
     );
 	
 	$loop = new WP_Query( $args ); 
+	$counter=0;
     $str="";    
     $str.="<div class='col-12' style='border: 8px solid #fc6c3f; padding: 10px; position: relative;' >";    
     $str.="<span style='background: #fc6c3f;color: #fff;padding: 6px;position: relative;top: -11px;left: -11px;'>Our pick</span>";    
-    while ( $loop->have_posts() ) : $loop->the_post(); 
+    while ( $loop->have_posts() ) : $loop->the_post(); $counter++;
        // $featured_img = wp_get_attachment_image_src( $post->ID );
 	    $image_src = get_post_meta( get_the_ID(), 'image_src', true );
 	    $product_link = get_post_meta( get_the_ID(), 'product_link', true );
-        $str.= "<div class='col-sm-12' style='display:flex;'>";
-        $str.="<div class='col-sm-5'>".$image_src ."</div>"; 
-        $str.="<div class='col-sm-7'><h3>".get_the_title()."</h3><br/>"; 
-        $str.=get_the_content()."</div>"; 
+	    $amazon_btn_src =get_template_directory_uri().'/images/amazon/amazon-button9.png';
+        $str.= "<div class='row h-100' style='display:flex;'>";
+        $str.="<div class='col col-12 col-sm-5 text-center  my-auto'><p>".$image_src ."</p></div>"; 
+        $str.="<div class='col  col-sm-7 '><h4>".get_the_title()."</h4>"; 
+        $str.=get_the_content()."<p class='pt-4 text-center'><a href='$product_link' target='_blank' style=''><img src='$amazon_btn_src'></a></p></div>"; 
          
 		 $str.= "</div>";
-		 $str.= "<hr/>";
-       
-        //the_content(); 
+		 if($counter!=$count)
+		  $str.= "<hr/>"; 
     endwhile;
 	$str.= "</div>";
 
