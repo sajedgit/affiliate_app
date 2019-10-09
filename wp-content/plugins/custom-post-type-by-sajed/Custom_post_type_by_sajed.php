@@ -168,6 +168,9 @@ function get_product_func( $atts )
 {
 	$category=$atts['cat'];
 	$count=$atts['count'];
+	$msg=$atts['msg'];
+	if(empty($msg))
+		$msg="Our pick";
 	
 	$args = array(  
         'post_type' => 'products',
@@ -183,7 +186,7 @@ function get_product_func( $atts )
 	$counter=0;
     $str="";    
     $str.="<div class='col-12' style='border: 8px solid #fc6c3f; padding: 10px; position: relative;' >";    
-    $str.="<span style='background: #fc6c3f;color: #fff;padding: 6px;position: relative;top: -11px;left: -11px;'>Our pick</span>";    
+    $str.="<span style='background: #fc6c3f;font-weight: bold;color: #fff;padding: 6px;position: relative;top: -11px;left: -11px;'>$msg</span>";    
     while ( $loop->have_posts() ) : $loop->the_post(); $counter++;
        // $featured_img = wp_get_attachment_image_src( $post->ID );
 	    $image_src = get_post_meta( get_the_ID(), 'image_src', true );
