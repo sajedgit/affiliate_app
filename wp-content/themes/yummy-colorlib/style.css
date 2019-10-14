@@ -1938,7 +1938,17 @@ color: #fff;
 	font-size: 13px;
 }
 
+/*----for amazon ads----*/
+[id^='amzn_assoc_ad_div_'] {
+      border: 2px solid #fc6c3f;
+padding: 5px;
+}
+.amzn-native-product
+{
+	border: none;
+}
 
+/*----for amazon ads----*/
 
 
 /* ----- End of Custom css ----- */
