@@ -1945,7 +1945,7 @@ padding: 5px;
 }
 .amzn-native-product
 {
-	border: none;
+	border: none!important;
 }
 
 /*----for amazon ads----*/
