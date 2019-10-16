@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /wp-admin/
 
-# Sitemap files
+#Sitemap files
 Sitemap: https://togetinspire.com/sitemap_index.xml
