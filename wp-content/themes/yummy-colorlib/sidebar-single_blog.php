@@ -66,90 +66,109 @@
                                 <a href="#">Ideas</a>
                             </div> */ ?>
 
-                           <?php get_sidebar('related-post'); ?>
+                           
 
-                            <!-- Comment Area Start -->
-                            <?php /* <div class="comment_area section_padding_50 clearfix">
-                                <h4 class="mb-30">2 Comments</h4>
+                         
+								
+								<?php 
+								$args = array(
+											'status' => 'approve',
+											'number' => '25',
+											'orderby' => 'comment_date',
+											'order' => 'DESC',
+											'parent' => '0',
+											'post_id' => $post->ID, // use post_id, not post_ID
+										);
+										$comments = get_comments($args);
+										$comments_number = get_comments_number($post->ID);
+								?>
+							
+							<?php if ( $comments_number > 0 ) : ?>
+							<!-- Comment Area Start -->
+                             <div class="comment_area section_padding_50 clearfix">
+                                <h4 class="mb-30"><?php echo $comments_number; ?> Comments</h4>
+								
+
 
                                 <ol>
+								
+								    <?php foreach($comments as $comment) : ?>
                                     <!-- Single Comment Area -->
                                     <li class="single_comment_area">
                                         <div class="comment-wrapper d-flex">
                                             <!-- Comment Meta -->
-                                            <div class="comment-author">
-                                                <img src="<?php bloginfo('template_url'); ?>/images/blog-img/17.jpg" alt="">
+                                            <div class="comment-author"> 
+												 <?php echo get_avatar( $comment->comment_author_email ); ?> 
                                             </div>
                                             <!-- Comment Content -->
                                             <div class="comment-content">
                                                 <span class="comment-date text-muted">27 Aug 2018</span>
-                                                <h5>Brandon Kelley</h5>
-                                                <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
-                                                <a href="#">Like</a>
-                                                <a class="active" href="#">Reply</a>
+                                                <h5><a style="all:revert;color:#007bff; text-decoration:none;" href="<?php echo $comment->comment_author_url; ?>"><?php echo $comment->comment_author ?></a></h5>
+                                                <p><?php echo $comment->comment_content ?></p>
+                                              	<!--<a href="#">Like</a>
+												<a class="active" href="">Reply</a> -->
                                             </div>
                                         </div>
-                                        <ol class="children">
-                                            <li class="single_comment_area">
-                                                <div class="comment-wrapper d-flex">
-                                                    <!-- Comment Meta -->
-                                                    <div class="comment-author">
-                                                        <img src="<?php bloginfo('template_url'); ?>/images/blog-img/18.jpg" alt="">
-                                                    </div>
-                                                    <!-- Comment Content -->
-                                                    <div class="comment-content">
-                                                        <span class="comment-date text-muted">27 Aug 2018</span>
-                                                        <h5>Brandon Kelley</h5>
-                                                        <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
-                                                        <a href="#">Like</a>
-                                                        <a class="active" href="#">Reply</a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ol>
+										<?php $args = array('status' => 'approve','number' => '1','post_id' => $post->ID,'parent' => $comment->comment_ID);
+											  $comments_reply = get_comments($args);
+										?>
+										    <?php foreach($comments_reply as $reply) : ?>
+											<ol class="children">
+												<li class="single_comment_area">
+													<div class="comment-wrapper d-flex">
+														<!-- Comment Meta -->
+														<div class="comment-author">
+														   <?php echo get_avatar( $reply->comment_author_email ); ?> 
+														</div>
+														<!-- Comment Content -->
+														<div class="comment-content">
+															<span class="comment-date text-muted">27 Aug 2018</span>
+															<h5><a style="all:revert;color:#007bff; text-decoration:none;" href="<?php echo $reply->comment_author_url; ?>"><?php echo $reply->comment_author ?></a></h5>
+															<p><?php echo $reply->comment_content ?></p>
+															<!--<a href="#">Like</a>
+															<a class="active" href="">Reply</a> -->
+														
+															
+														</div>
+													</div>
+												</li>
+											</ol>
+											<?php endforeach; ?>
                                     </li>
-                                    <li class="single_comment_area">
-                                        <div class="comment-wrapper d-flex">
-                                            <!-- Comment Meta -->
-                                            <div class="comment-author">
-                                                <img src="<?php bloginfo('template_url'); ?>/images/blog-img/19.jpg" alt="">
-                                            </div>
-                                            <!-- Comment Content -->
-                                            <div class="comment-content">
-                                                <span class="comment-date text-muted">27 Aug 2018</span>
-                                                <h5>Brandon Kelley</h5>
-                                                <p>Neque porro qui squam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
-                                                <a href="#">Like</a>
-                                                <a class="active" href="#">Reply</a>
-                                            </div>
-                                        </div>
-                                    </li>
+                                 <?php endforeach; ?>
+								
+								
                                 </ol>
                             </div>
+							<?php endif; ?>
 
                             <!-- Leave A Comment -->
                             <div class="leave-comment-area section_padding_50 clearfix">
                                 <div class="comment-form">
-                                    <h4 class="mb-30">Leave A Comment</h4>
+                                    
 
-                                    <!-- Comment Form -->
-                                    <form action="#" method="post">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="contact-name" placeholder="Name">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="contact-email" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="contact-website" placeholder="Website">
-                                        </div>
-                                        <div class="form-group">
-                                            <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                        </div>
-                                        <button type="submit" class="btn contact-btn">Post Comment</button>
-                                    </form>
+                                    <?php 
+									$comments_args = array(
+											// change the title of send button 
+											'label_submit'=>'Post Comment',
+											'class_submit' => 'btn contact-btn',
+											// change the title of the reply section
+											'title_reply'=>'Write a Reply or Comment',
+											// remove "Text or HTML to be displayed after the set of comment fields"
+											//'comment_notes_after' => '<button type="submit" id="submit-new"><span>'.__('Post Comment').'</span></button>',
+											// redefine your own textarea (the comment body)
+									);
+
+									comment_form($comments_args);
+								?>
+								
                                 </div>
-                            </div> */ ?>
+								
+                            </div> 
+							
+							
+							<?php get_sidebar('related-post'); ?>
+							
 
                         </div>
                     </div>

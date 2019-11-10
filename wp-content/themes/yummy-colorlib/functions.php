@@ -216,5 +216,106 @@ function setPostViews($postID) {
 add_action( 'after_setup_theme', 'custom_image_size_setup' );
 function custom_image_size_setup() {
     add_image_size( 'mini-large', 750,500 ); 
-    
+	   
 }
+
+
+/*-- custom comment form  --*/
+
+/**
+ * Customize comment form default fields.
+ * Move the comment_field below the author, email, and url fields.
+ */
+function sajed_update_comment_form_default_fields( $fields ) {
+    $commenter     = wp_get_current_commenter();
+    $user          = wp_get_current_user();
+    $user_identity = $user->exists() ? $user->display_name : '';
+    $req           = get_option( 'require_name_email' );
+    $aria_req      = ( $req ? " aria-required='true'" : '' );
+    $html_req      = ( $req ? " required='required'" : '' );
+    $html5         = current_theme_supports( 'html5', 'comment-form' ) ? 'html5' : false;
+
+    $fields = [
+        'author' => '<p class="comment-form-author">'.
+                    '<input   placeholder="Name" class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" maxlength="245"' . $aria_req . $html_req . ' /></p>',
+        'email'  => '<p class="comment-form-email">' .
+                    '<input    placeholder="Email" class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" maxlength="100" aria-describedby="email-notes"' . $aria_req . $html_req  . ' /></p>',
+        'url'    => '<p class="comment-form-url">'.
+                    '<input   placeholder="Website" class="form-control" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" maxlength="200" /></p>',
+        'comment_field' => '<textarea    class="form-control" id="comment" name="comment" cols="30" rows="10" placeholder="Comment " maxlength="65525" aria-required="true" required="required"></textarea></p>',
+    ];
+
+    return $fields;
+}
+add_filter( 'comment_form_default_fields', 'sajed_update_comment_form_default_fields' );
+
+/**
+ * Remove the original comment field because we've added it to the default fields
+ * using sajed_update_comment_form_default_fields(). If we don't do this, the comment
+ * field will appear twice.
+ */
+function sajed_comment_form_defaults( $defaults ) {
+    if ( isset( $defaults[ 'comment_field' ] ) ) {
+        $defaults[ 'comment_field' ] = '';
+    }
+
+    return $defaults;
+}
+add_filter( 'comment_form_defaults', 'sajed_comment_form_defaults', 10, 1 );
+
+
+
+/* Comment form validation on same page*/
+function comment_validation_init() 
+{
+	if(is_single() && comments_open() ) 
+	{ 
+	?>
+		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+		$('#commentform').validate({
+		rules: {
+		author: {
+		required: true,
+		minlength: 2
+		},
+		email: {
+		required: true,
+		email: true
+		},
+		comment: {
+		required: true,
+		//minlength: 20
+		}
+		},
+		messages: {
+		author: "Please enter your name",
+		email: "Please enter a valid email address.",
+		comment: "Please enter your comment"
+		},
+		errorElement: "div",
+		errorPlacement: function(error, element) {
+		element.after(error);
+		}
+		});
+		});
+		</script>
+		<?php
+	}
+}
+add_action('wp_footer', 'comment_validation_init');
+
+
+
+
+/*-- end custom comment form  --*/
+
+
+
+
+
+
+
+
+
