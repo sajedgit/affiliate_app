@@ -24,6 +24,8 @@ function yummy_colorlib_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
+	
+
 
 	
 	add_theme_support( 'custom-logo', array(
@@ -77,7 +79,7 @@ function yummy_colorlib_setup() {
 		
 		// This theme uses wp_nav_menu() in one location.
 		
-	   
+		add_theme_support( 'post-thumbnails' );   
 
 	 
 }
