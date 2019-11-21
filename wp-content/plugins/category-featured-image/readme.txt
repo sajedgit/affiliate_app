@@ -4,8 +4,8 @@ Donate link: https://shop.riverforest-wp.info/donate/
 Tags: category, featured image, post
 Requires at least: 3.6.0
 Requires PHP: 5.6
-Tested up to: 5.2
-Stable tag: 1.03
+Tested up to: 5.3
+Stable tag: 1.04
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,9 @@ none
 6. Edit for apply or exclude bulk changes
 
 == Changelog ==
+
+= 1.04 =
+Fixed a problem with new posts.
 
 = 1.03 =
 Conformed to the WordPress coding standard.

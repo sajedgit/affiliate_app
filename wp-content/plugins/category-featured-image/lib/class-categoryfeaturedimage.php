@@ -44,6 +44,7 @@ class CategoryFeaturedImage {
 		add_filter( 'manage_edit-category_columns', array( $this, 'add_term_columns' ) );
 		add_filter( 'manage_category_custom_column', array( $this, 'add_term_custom_column' ), 10, 3 );
 		add_action( 'admin_init', array( $this, 'post_published_update' ) );
+		add_action( 'wp_insert_post', array( $this, 'post_published_update_thumbnail_id' ), 10, 2 );
 
 	}
 

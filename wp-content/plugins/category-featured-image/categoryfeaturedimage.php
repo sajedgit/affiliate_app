@@ -3,7 +3,7 @@
  * Plugin Name: Category Featured Image
  * Plugin URI:  https://wordpress.org/plugins/category-featured-image/
  * Description: Set a featured image for post by a category.
- * Version:     1.03
+ * Version:     1.04
  * Author:      Katsushi Kawamori
  * Author URI:  https://riverforest-wp.info/
  * License:     GPL2
